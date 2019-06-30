@@ -42,7 +42,7 @@ li.links,
 li.rules,
 li.info {
   font-family: 'Bungee Inline', cursive;
-  font-size: 26px;
+  font-size: 21px;
   width: 249px;
   cursor: pointer;
   
@@ -50,7 +50,7 @@ li.info {
 
 div.name > strong {
   font-family: 'Bungee Inline', cursive;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 #container {
@@ -216,7 +216,6 @@ img.mmlogo {
 .fifth,
 .name,
 .previous {
-  font-size: px;
   padding: 0px, 0px, 0px, 3px;
   text-align: center;
   line-height: 40px;
