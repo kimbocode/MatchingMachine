@@ -1,0 +1,149 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang-"en-us">
+  <head>
+    <!-- App Title -->
+    <title>The Match Machine</title>
+    
+    <!-- App Description -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+   
+  </head>
+  
+  <body>
+    <div id="game" style="max-width: 1920px; margin:auto; max-height: 1280px;">
+    <div id="wrap">
+    
+        <!-- Navigation Menu -->
+    <nav id="menu-navbar" class="menu-navbar">
+      <div id ="user-menu">
+        <div id="user-content">
+          <ul>
+            <div id="menu-display" class="menu-items">
+              <h1>MENU</h1>
+              <li class ="leaderboard">Leaderboard</li>
+              <li class="theme">Theme</li>
+              <li class="links">Links</li>
+              <li class="rules">Rules</li>
+              <li class="info">Info</li>
+          </ul>
+          
+          <div id = "leaderboard">
+            <div class = "champion"><div class="name"><strong>1. Jimmay247</strong></div><div class="time">00:44:399</div></div>
+            <div class = "second"><div class="name"><strong>2. Lauri Weller</strong></div><div class="time">00:47:103</div></div>
+            <div class = "third"><div class="name"><strong>3. HAHAHAHA</strong></div><div class="time">00:47:889</div></div>
+            <div class = "fourth"><div class="name"><strong>4. iRULE7</strong></div><div class="time">00:48:222</div></div>
+            <div class = "fifth"><div class="name"><strong>5. 12345678910</strong></div><div class="time">00:49:433</div></div>
+            <div class = "goBack"><strong class="previous">BACK</strong></div>
+          </div>
+          
+          <div id ="theme" class="menu-items">
+            <div class="colors"><div class="red"><!-- Red --></div><div class="square" id="red-square"></div></div>
+            <div class="colors"><div class="blue"><!-- Blue --></div><div class="square"id="blue-square"></div></div>
+            <div class="colors"><div class="orange"><!-- Orange --></div><div class="square"id="orange-square"></div></div>
+            <div class="colors"><div class="green"><!-- Green --></div><div class="square"id="green-square"></div></div> 
+            <div class="colors"><div class="dark"><!-- Dark --></div><div class="square"id="dark-square" ></div></div>
+            <div class = "goBack"><strong class="previous">BACK</strong></div>
+          </div>
+          
+          <div id ="links" class="menu-items">
+            <div id="udemy" class="darkUdemy"><a class="udemy-link" href="https://www.udemy.com">Udemy</a></div>
+            <p class="udemy">A great starting point for any web development journey.</p>
+            
+            <div id="andrei" class="darkAndrei"><a class="andrei-link" href="https://www.udemy.com/user/andrei-neagoie/">Andrei Neagoie</a></div>
+            <p class="andrei">An absolutely amazing instructor. The quality of his courses are top-notch.</p>
+            
+            <div id="colt" class="darkColt"><a class="colt-link" href="https://www.udemy.com/user/coltsteele/">Colt Steele</a></div>
+            <p class="colt">Colt's courses have played a huge role in my learning. Highly recommended.</p>
+            
+            <div id="Imran" class="darkImran"><a class="imran-link" href="https://www.udemy.com/user/imran-afzal-5/">Imran Afzal</a></div>
+            <p class="imran">Thinking about learning Linux? This is your guy.</p>
+            
+            <div class ="goBack" class="dark"><strong class="previous">BACK</strong></div>
+          </div>
+          
+          <div id ="rules" class="menu-items">
+            <h1 class="rules">RULES</h1>
+            
+            <p class="rules">1. Click squares to reveal cards.</p>
+            
+            <p class="rules">2. Match two cards to complete a pair.</p>
+            
+            <p class="rules">3. Match all cards to win.</p>
+            
+            <p class="rules">4. Matching Machine checks for a match after every two clicks.</p> 
+            
+            <p class="rules">If there is no match, both cards return to 
+              an unflipped state after a brief interval.
+            </p>
+
+            <div class = "goBack" class="rules"><strong class="previous">BACK</strong></div>
+          </div>
+
+          <div id ="info" class="menu-items">
+                <h1 class="info">Matching Machine</h1>
+                <h5 class="info"> <em>A Vanilla JS Gaming Experience</em></h5>
+                
+                <p class="author">Author:</p>
+                <strong class="authorname">Charles Presley</strong> 
+                
+                <p class="contact">Contact: </p>
+                <strong class="email">charlesbpresley@gmail.com</strong>
+                <div class = "goBack" class="info"><strong class="previous">BACK</strong></div>
+          </div>
+
+          </div>
+        </div>
+        
+        <div><i class="fas fa-bars"></i></div>
+          <div class="display">
+            <span id="stopwatch" class="stopwatch">
+              <div class="navbar-text">
+                <h6>MATCHING MACHINE</h6>
+              </div>
+            </span>
+        </div>
+        <i class="fas fa-redo-alt"></i>
+    </nav>
+    
+      <!-- Game Display -->
+    <div id="container" class="container">
+    <div class="card-container 01"></div>
+    <div class="card-container 02"></div>
+    <div class="card-container 03"></div>
+    <div class="card-container 04"></div>
+    <div class="card-container 05"></div>
+    <div class="card-container 06"></div>
+    <div class="card-container 07"></div> 
+    <div class="card-container 08"></div>
+    <div class="card-container 09"></div>
+    <div class="card-container 10"></div>
+    <div class="card-container 11"></div> 
+    <div class="card-container 12"></div>
+    <div class="card-container 13"></div>
+    <div class="card-container 14"></div>
+    <div class="card-container 15"></div> 
+    <div class="card-container 16"></div>
+    
+    <div id ="winner">
+      <h1 class="winner">Congratulations<h1></h1>
+      <p class="winner">You have earned a top 5 time.</p>
+      <form class="winner">
+      <p class="max">Enter Your Name (12 Character Max).</p>
+      <input type="text" placeholder="Your Name Goes Here" default-value="Anonymous">
+      <button id="submit" type="button">Submit Time</button>
+      </form>
+    </div>
+</div>
+</div>
+    
+    <script type="text/javascript" src="themes.js"></script>
+    <script type="text/javascript" src="menus.js"></script>
+    <script type="text/javascript" src="pieces.js"></script>      
+  </body>
+</html>
